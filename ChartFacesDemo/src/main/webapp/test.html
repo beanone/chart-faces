@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=ISO-8859-1" />
+<title>ChartFaces Demo - Advanced Scatter Chart</title>
+</head>
+<body>
+<div align="center">
+<div>
+<button class="move" value="up" type="button">Move Up</button><br />
+<button class="move" value="left" type="button">Move Left</button>
+<button class="move" value="right" type="button">Move Right</button><br />
+<button class="move" value="down" type="button">Move Down</button><br />
+</div>
+<form id="j_idt4" name="j_idt4" method="post" action="/ChartFacesDemo/mandelbrot2.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt4" value="j_idt4" />
+<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="9210681517631559041:-9082534948318268574" autocomplete="off" />
+</form>
+<br />
+<h4 style="color:darkred">Colored Mandelbrot Fractal With Compression</h4>
+<div><script type="text/javascript" src="/ChartFacesDemo/javax.faces.resource/js/jsf.js.jsf?ln=chartfaces"></script><script type="text/javascript" src="/ChartFacesDemo/javax.faces.resource/js/jquery.min.js.jsf?ln=chartfaces"></script><script type="text/javascript" src="/ChartFacesDemo/javax.faces.resource/js/jquery.subscribe.js.jsf?ln=chartfaces"></script><script type="text/javascript" src="/ChartFacesDemo/javax.faces.resource/js/chartfaces.js.jsf?ln=chartfaces"></script><script type="text/javascript" src="/ChartFacesDemo/javax.faces.resource/js/jquery.mousewheel.js.jsf?ln=chartfaces"></script><script type="text/javascript" src="/ChartFacesDemo/javax.faces.resource/js/jquery.event.drag.min.js.jsf?ln=chartfaces"></script><script type="text/javascript" src="/ChartFacesDemo/javax.faces.resource/js/jquery.event.drop.min.js.jsf?ln=chartfaces"></script><script type="text/javascript" src="/ChartFacesDemo/javax.faces.resource/js/chrome/chartutil.js.jsf?ln=chartfaces"></script><script type="application/x-javascript" language="JavaScript">$(document).ready(function(){var ds = {"payloadType":"svg","append":"true","cancel":"true","progress":0,"payload":{"use.chart0main.0":{"xlink:href":"#component1symbol","height":[],"title":[],"width":[],"x":[],"y":[]},"path.yaxis2.1":{"d":"M200 1080.0h-18M200 900.0h-18M200 720.0h-18M200 540.0h-18M200 360.0h-18M200 180.0h-18M200 0.0h-18","style":"fill:none;stroke:#000000;stroke-width:2px"},"path.yaxis3.2":{"d":"M0 1080.0h18M0 900.0h18M0 720.0h18M0 540.0h18M0 360.0h18M0 180.0h18M0 0.0h18","style":"fill:none;stroke:#000000;stroke-width:2px"},"path.xaxis4.3":{"d":"M0.0 0v18M180.0 0v18M360.0 0v18M540.0 0v18M720.0 0v18M900.0 0v18M1080.0 0v18","style":"fill:none;stroke:#000000;stroke-width:2px"},"path.xaxis5.4":{"d":"M0.0 140.0v-18.0M180.0 140.0v-18.0M360.0 140.0v-18.0M540.0 140.0v-18.0M720.0 140.0v-18.0M900.0 140.0v-18.0M1080.0 140.0v-18.0","style":"fill:none;stroke:#000000;stroke-width:2px"},"path.yaxis2.5":{"d":"M200 0v1080","style":"fill:none;stroke:#000000;stroke-width:4px;"},"path.yaxis3.6":{"d":"M0 0v1080","style":"fill:none;stroke:#000000;stroke-width:4px;"},"path.xaxis4.7":{"d":"M0 0h1080","style":"fill:none;stroke:#000000;stroke-width:4px;"},"path.xaxis5.8":{"d":"M0 140h1080","style":"fill:none;stroke:#000000;stroke-width:4px;"},"g.yaxis2.9":{"style":"font-family:Arial;font-size:37px;","text-anchor":"end","text.yaxis2.0":{"x":"159.0","innerText":["-1.5","-1.0","-0.5","0.0","0.5","1.0","1.5"],"y":["1080.0","900.0","720.0","540.0","360.0","180.0","0.0"]}},"g.yaxis3.10":{"style":"font-family:Arial;font-size:37px;","text-anchor":"start","text.yaxis3.0":{"x":"41.0","innerText":["-1.5","-1.0","-0.5","0.0","0.5","1.0","1.5"],"y":["1080.0","900.0","720.0","540.0","360.0","180.0","0.0"]}},"g.xaxis4.11":{"style":"font-family:Arial;font-size:37px;","text-anchor":"middle","text.xaxis4.0":{"y":"60.0","innerText":["-2.0","-1.5","-1.0","-0.5","0.0","0.5","1.0"],"x":["0.0","180.0","360.0","540.0","720.0","900.0","1080.0"]}},"g.xaxis5.12":{"style":"font-family:Arial;font-size:37px;","text-anchor":"middle","text.xaxis5.0":{"y":"117.0","innerText":["-2.0","-1.5","-1.0","-0.5","0.0","0.5","1.0"],"x":["0.0","180.0","360.0","540.0","720.0","900.0","1080.0"]}}}};
+CF.updateChart(ds);
+CF.cfInit('chart', '', 50);
+});</script><svg:svg height="444pt" id="chart" viewBox="0 0 1600 1480" width="480pt" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><svg:g height="1360" transform="translate(60,60)" width="1480" x="60" y="60"><svg:g height="1080" transform="translate(200,140)" width="1080" x="200" y="140"><svg:defs><svg:symbol id="component1symbol" viewBox="0 0 20 20"><svg:rect height="20" opacity="1.0" width="20" x="0.0" y="0.0"></svg:rect></svg:symbol></svg:defs></svg:g><svg:g height="1080" shape-rendering="crispEdges" transform="translate(0,140)" width="200" x="0" y="140"><svg:g style="font-family:Arial;font-size:40px;font-weight:bold;text-anchor:middle" text-anchor="middle" transform="rotate(-90,25 540)"><svg:text x="25" y="540"></svg:text></svg:g><svg:g id="yaxis2"></svg:g></svg:g><svg:g height="1080" shape-rendering="crispEdges" transform="translate(1280,140)" width="200" x="1280" y="140"><svg:g style="font-family:Arial;font-size:40px;font-weight:bold;text-anchor:middle" text-anchor="middle" transform="rotate(90,175 540)"><svg:text x="175" y="540"></svg:text></svg:g><svg:g id="yaxis3"></svg:g></svg:g><svg:g height="140" shape-rendering="crispEdges" transform="translate(200,1220)" width="1080" x="200" y="1220"><svg:g style="font-family:Arial;font-size:40px;font-weight:bold;text-anchor:middle" text-anchor="middle"><svg:text x="540" y="140"></svg:text></svg:g><svg:g id="xaxis4"></svg:g></svg:g><svg:g height="140" shape-rendering="crispEdges" transform="translate(200,0)" width="1080" x="200" y="0"><svg:g style="font-family:Arial;font-size:40px;font-weight:bold;text-anchor:middle" text-anchor="middle"><svg:text x="540" y="25"></svg:text></svg:g><svg:g id="xaxis5"></svg:g></svg:g><svg:g height="1080" id="chart0main" transform="translate(200,140)" width="1080" x="200" y="140"></svg:g></svg:g><svg:g shape-rendering="crispEdges" style="stroke-width:5px;stroke:#000000;fill:none;"><svg:rect height="1480" width="1600" x="0" y="0"></svg:rect></svg:g></svg:svg>
+</div>
+<script language="javascript">
+//<![CDATA[
+$(document).ready(function() {
+	$('.move').click( function() {
+		$().publish('move', [this.value]);
+	});
+});
+//]]>
+</script>
+<div>
+<button value="reset" type="button">Reset</button>
+</div>
+<div>Status:<br />
+<textarea name="chartStatus" style="vertical-align:top;" rows="7" cols="50" readonly="readonly"></textarea>
+</div>
+</div>
+</body>
+</html>

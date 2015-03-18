@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:cf="http://chartfaces.org/chart">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=ISO-8859-1" />
+<title>ChartFaces Demo - Live Chart</title>
+</head>
+<body>
+<div align="center">
+<h4 style="color:darkred">Live Chart</h4>
+<h:form></h:form>
+<div>
+<cf:scatter	width="432pt" height="324pt" live="true" liveListener="#{randomData.refresh}" refreshInterval="500">
+<cf:scatterset value="#{randomData.values}" showLine="true"/>
+<cf:yaxis min="#{randomData.miny}" max="#{randomData.maxy}" value="#{randomData.y}"/>
+<cf:yaxis min="#{randomData.miny}" max="#{randomData.maxy}" position="right"/>
+<cf:xaxis min="#{randomData.minx}" max="#{randomData.maxx}"/>
+<cf:xaxis min="#{randomData.minx}" max="#{randomData.maxx}" position="top"/>
+</cf:scatter>
+</div>
+<script language="javascript">
+	//<![CDATA[
+	$(document).ready(function() {
+		var stopButton = $('button[value=stop]');
+		var startButton = $('button[value=restart]');
+
+		stopButton.subscribe('after', function(what) {
+			if ( what == 'stop' ) {
+				stopButton.hide();
+				startButton.show();
+			}
+		});
+
+		startButton.subscribe('after', function(what) {
+			if ( what == 'restart' ) {
+				stopButton.show();
+				startButton.hide();
+			}
+		});
+	});
+	//]]>
+</script>
+<button type="button" value="stop">Stop</button>
+<button type="button" value="restart" style="display:none;">Start</button>
+<div>Status:<br/>
+<textarea name="status" style="vertical-align:top;" rows="7" cols="50" readonly="readonly"></textarea>
+</div>
+</div>
+</body>
+</html>

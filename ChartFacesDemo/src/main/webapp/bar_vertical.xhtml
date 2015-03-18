@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:cf="http://chartfaces.org/chart">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=ISO-8859-1" />
+<title>ChartFaces Demo - Vertical Bar Chart</title>
+</head>
+<body>
+<div align="center">
+<h4 style="color:darkred">#{carbon.header}</h4>
+<div>
+<cf:bar bottomPadding="60" leftPadding="60" rightPadding="60"
+	width="432pt" height="324pt"
+	settings="#{carbon.chartSettings}">
+<cf:barset axesIds="carbon" value="#{carbon.emissionValues}"/>
+<cf:yaxis id="carbon" min="0" max="52000" width="210"
+	value="#{carbon.emissionLabelAmounts}"
+	caption="Million tons of carbon" gridLineDensity="1"/>
+<cf:barset axesIds="population" value="#{carbon.populations}"/>
+<cf:yaxis id="population" min="0" max="1400" position="right" width="200"
+	value="#{carbon.populationLabelAmounts}" caption="Population in millions"/>
+<cf:xaxis height="120" labelAngle="-30" label="#{carbon.countryLabels}" tickHeight="0"/>
+<cf:xaxis height="80" position="top" tickHeight="0"/>
+</cf:bar>
+</div>
+</div>
+</body>
+</html>

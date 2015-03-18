@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+<f:view>
+
+	<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
+	<meta http-equiv="PRAGMA" content="NO-CACHE" />
+	<meta http-equiv="CACHE-CONTROL" content="NO-CACHE"/>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=ISO-8859-1"/>
+
+	<!-- ****** faviconit.com favicons ****** -->
+	<link rel="shortcut icon" href="images/favicons/favicon.ico"/>
+	<link rel="icon" sizes="16x16 32x32 64x64" href="images/favicons/favicon.ico"/>
+	<link rel="icon" type="image/png" sizes="196x196" href="images/favicons/favicon-192.png"/>
+	<link rel="icon" type="image/png" sizes="160x160" href="images/favicons/favicon-160.png"/>
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96.png"/>
+	<link rel="icon" type="image/png" sizes="64x64" href="images/favicons/favicon-64.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32.png"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16.png"/>
+	<link rel="apple-touch-icon" href="images/favicons/favicon-57.png"/>
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/favicon-114.png"/>
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/favicon-72.png"/>
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/favicon-144.png"/>
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/favicon-60.png"/>
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/favicon-120.png"/>
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/favicon-76.png"/>
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/favicon-152.png"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/favicon-180.png"/>
+	<meta name="msapplication-TileColor" content="#FFFFFF"/>
+	<meta name="msapplication-TileImage" content="images/favicons/favicon-144.png"/>
+	<meta name="msapplication-config" content="images/favicons/browserconfig.xml"/>
+	<!-- ****** faviconit.com favicons ****** -->	
+
+	<link rel="stylesheet" href="css/default.css" type="text/css" />
+	<link rel="stylesheet" href="css/tabs.css" type="text/css" />
+	<script type="text/javascript" src="${request.contextPath}/javax.faces.resource/js/jquery.min.js.jsf?ln=chartfaces"/>
+	<script type="text/javascript">
+		//<![CDATA[
+			$(document).ready(function() {
+				$('ol#tabs a[target="frameContent"]').click(function() {
+					$('ol#tabs a').removeClass('active');
+					$(this).addClass('active');
+				});
+			});
+		//]]>
+	</script>
+	<ui:insert name="resources"/>
+	<title>Chartfaces Demo</title>
+	</head>
+
+	<body id="articles">
+		<div id="outer-container">
+			<div id="header">
+		    	<ui:include src="/WEB-INF/layout/header.xhtml"/>
+			</div>
+			<div style="clear: both"/>
+
+			<div id="left-nav">
+				<ui:include src="/navigation/navigation.xhtml"/>
+			</div>
+			<div id="content-container">
+				<ui:insert name="tabContainer"/>
+			</div>
+			<div style="clear: both"/>
+
+			<div id="footer">
+				<ui:include src="/WEB-INF/layout/footer.xhtml"/>
+			</div>
+		</div>
+	</body>
+
+</f:view>
+</html>

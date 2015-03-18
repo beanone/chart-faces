@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:cf="http://chartfaces.org/chart">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=ISO-8859-1" />
+<link rel="stylesheet" href="css/default.css" type="text/css" />
+<title>ChartFaces Demo - Java Source</title>
+<script type="text/javascript" src="${request.contextPath}/javax.faces.resource/js/jquery.min.js.jsf?ln=chartfaces"/>
+<script type="text/javascript">
+	//<![CDATA[
+		$(document).ready(function() {
+			$('ul.sourceList li:first-child a').addClass('active');
+			$('ul.sourceList a').click(function() {
+				$('ul.sourceList a').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	//]]>
+</script>
+</head>
+<body>
+	<div id="sourceNav">
+		<ul class="sourceList">
+			<ui:repeat var="s" value="#{demoApp.sources}">
+				<li>
+					<a href="${request.contextPath}/sources/org/javaq/chartfaces/demo/#{s}.java" target="sourceContent">#{s}.java</a>
+				</li>
+			</ui:repeat>
+		</ul>
+		<iframe class="sourceFrame" name="sourceContent" id="sourceContent" src="${request.contextPath}/sources/org/javaq/chartfaces/demo/#{demoApp.sources[0]}.java"/>
+	</div>
+</body>
+</html>

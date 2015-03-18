@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:cf="http://chartfaces.org/chart">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=ISO-8859-1" />
+<title>ChartFaces Demo - Advanced Scatter Chart</title>
+</head>
+<body>
+<div align="center">
+<h4 style="color:darkred">Colored Mandelbrot Fractal</h4>
+<h:form></h:form>
+<div>
+<cf:scatter	settings="#{weightHeight.chartSettings}" width="500pt" height="500pt"
+	leftPadding="60" topPadding="60" bottomPadding="60" rightPadding="60"
+	zoomListener="#{mandelbrot.zoom}">
+<cf:scatter3vset value="#{mandelbrot.values}"
+	symbol="square" symbolSize="#{mandelbrot.size}" propertyMap="#{mandelbrot.propertyMap}"/>
+<cf:yaxis min="#{mandelbrot.ymin}" max="#{mandelbrot.ymax}" width="200"
+	value="#{mandelbrot.yvalues}" />
+<cf:yaxis min="#{mandelbrot.ymin}" max="#{mandelbrot.ymax}" width="200"
+	value="#{mandelbrot.yvalues}" position="right"/>
+<cf:xaxis min="#{mandelbrot.xmin}" max="#{mandelbrot.xmax}" height="140"
+	value="#{mandelbrot.xvalues}"/>
+<cf:xaxis min="#{mandelbrot.xmin}" max="#{mandelbrot.xmax}" height="140"
+	value="#{mandelbrot.xvalues}" position="top"/>
+</cf:scatter>
+</div>
+</div>
+</body>
+</html>

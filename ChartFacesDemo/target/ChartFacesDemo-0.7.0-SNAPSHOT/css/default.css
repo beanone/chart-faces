@@ -1,0 +1,175 @@
+/* html body tag style */
+body {
+    margin: 0px;
+    padding: 0px;
+    font: 10pt/1.3em Verdana, sans-serif;
+}
+
+/* h1 tag style */
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+    font-size: 3em;
+    color: #630;
+}
+
+/* CSS Style Rule for Div having id="outer-container" */
+/* outer-container will hold the whole assembly of
+   nested div overlays. */
+/* It will also center align the design */
+#outer-container {
+    width: 990px;
+    margin: 0 auto;
+}
+
+/* footer CSS Style Rule */
+#header {
+    width: 990px;
+    height: 90px;
+    background: url(header_bg.png);
+}
+
+#header h1 {
+	padding: 15px 0 0 5px;
+}
+
+/* footer CSS Style Rule */
+#footer {
+    width: 990px;
+}
+
+/* content-container CSS Style Rule */
+/* It will hold the main content of the page. */
+/* it is the right side column */
+/* in this 2 columns div layout */
+#content-container {
+    width: 720px;
+    height: 800px;
+    margin: 2px 0px 2px 0px;
+    float: left;
+}
+
+/* left side navigation that is the left side column of */
+/* 2 columns div layout */
+#left-nav {
+	padding: 20px 10px 10px 10px;
+    background-color: #0A0A0A;
+	width: 20%;
+    height: 1000px;
+    margin: 2px 2px 2px 0px;
+    float: left;
+}
+
+/* Top navigation CSS Style Rule */
+#top-Nav {
+    width: 990px;
+    margin: 2px 0px 0px 0px;
+}
+
+#left-nav * {
+	color: #fff;
+}
+
+#left-nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-bottom:6px;
+	overflow:hidden;
+}
+
+#left-nav ul li {
+	text-align: left;
+	margin: 0;
+	padding: 0 12px 0;
+}
+
+#left-nav a, #nav a:visited {
+	color: #ffffff;
+	font-size: 11px;
+	font-family: Verdana,sans-serif;
+	line-height: 25px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-decoration: none;
+	text-align: start;
+	text-indent: 0px;
+}
+
+#left-nav a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+iframe.contentFrame {
+	margin-top: -15px;
+	margin-left: -2px;
+	padding-top: 15px;
+	padding-left: 7px;
+	border:none;
+	height:983.5px;
+	width:766px;
+	border-right: solid 1px #0A0A0A;
+	border-bottom: solid 1px #0A0A0A;
+}
+
+iframe.sourceFrame {
+	margin-top: -15px;
+	padding-top: 0px;
+	border:none;
+	height:938px;
+	width:766px;
+}
+
+.header {
+	padding-top: 5px;
+	padding-bottom: 2px;
+	font-weight: bold;
+	font-size: 1.0em;
+	color: #999 !important;
+}
+
+#welcome {
+	padding-left: 10px;
+}
+
+#sourceNav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+
+#sourceNav ul li a {
+	color: red;
+	display: block;
+	background: url('sep.gif') right 20% no-repeat;
+	float: left;
+	height: 2.5em;
+	padding-left: 8px;
+	padding-right: 10px;
+}
+
+#sourceNav ul li a:visited {
+	color: #933;
+}
+
+#sourceNav ul li a:hover {
+	text-decoration: overline;
+}
+
+#sourceNav ul li:first-child a:hover {
+	text-decoration: underline;
+}
+
+#sourceNav ul.sourceList li:last-child a {
+	background: none;
+	padding-right: 0;
+}
+
+div#sourceNav ul.sourceList li a.active {
+	text-decoration: none;
+}

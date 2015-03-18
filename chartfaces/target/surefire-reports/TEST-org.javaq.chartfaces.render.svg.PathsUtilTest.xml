@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="0" time="0.015" errors="0" skipped="0" tests="58" name="org.javaq.chartfaces.render.svg.PathsUtilTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_25\jre\bin"/>
+    <property name="java.vm.version" value="20.0-b11"/>
+    <property name="java.vm.vendor" value="Sun Microsystems Inc."/>
+    <property name="java.vendor.url" value="http://java.sun.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\dev\google_code\git\chart-faces\chartfaces"/>
+    <property name="java.runtime.version" value="1.6.0_25-b06"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.6.0_25\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\HONGYA~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\dev\tools\apache-maven-3.2.5\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_25\bin;.;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\dev\tools\TortoiseSVN\bin;C:\dev\tools\SlikSvn\bin;C:\Program Files\Java\jdk1.6.0_25\bin;C:\dev\tools\apache-maven-3.2.5\bin;C:\dev\tools\Graphviz\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Calibre2\;C:\Program Files\Mercurial\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\dev\tools\apache-ant-1.8.4\bin;C:\Program Files\Google\Cloud SDK\google-cloud-sdk\bin;C:\Program Files\TortoiseGit\bin;C:\dev\tools\Git\cmd;C:\dev\tools\Ruby193\bin;C:\Users\hongyan99\AppData\Roaming\npm\;C:\Program Files\nodejs;C:\Program Files (x86)\mingw-w64\i686-4.9.0-posix-dwarf-rt_v3-rev1\mingw32\bin;C:\Program Files (x86)\GnuWin32\bin;c:\F\G77\bin"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\hongyan99"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="user.name" value="hongyan99"/>
+    <property name="java.class.path" value="C:\dev\tools\apache-maven-3.2.5\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.6.0_25\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_25"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.6.0_25\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.6.0_25\jre\lib\resources.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\rt.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\jce.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.6.0_25\jre\lib\modules\jdk.boot.jar;C:\Program Files\Java\jdk1.6.0_25\jre\classes"/>
+    <property name="java.vendor" value="Sun Microsystems Inc."/>
+    <property name="maven.home" value="C:\dev\tools\apache-maven-3.2.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase time="0.001" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCenter"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCenterAlreadyCenteredTriangle"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCenterEmptyPaths"/>
+  <testcase time="0.001" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateAbsolutePath"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateAbsolutePathNoPoint"/>
+  <testcase time="0.001" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateAbsolutePathOnePoint"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateAbsolutePathXandYArrayLengthDifferent"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularPolygonPathEvenSides"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularPolygonPathOddSides"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularPolygonRadius0"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularPolygonRadiusNegative"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularPolygonSides2"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularPolygonSidesNegative"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntDoubleDoubleDoubleDouble"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntDoubleDoubleDoubleDoubleR10"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntDoubleDoubleDoubleDoubleR1EqualR2"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntDoubleDoubleDoubleDoubleR20"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntDoubleDoubleDoubleDoubleSides2"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntDoubleDoubleDoubleDoubleSidesNegative"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntIntDoubleDoubleDouble"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntIntDoubleDoubleDoubleQEqual1"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntIntDoubleDoubleDoubleQEqualHalfP"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntIntDoubleDoubleDoubleQEqualP"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntIntDoubleDoubleDoubleRadius0"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRegularStarPathIntIntDoubleDoubleDoubleRadiusNegative"/>
+  <testcase time="0.001" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRelativePath"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRelativePathNoPoint"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRelativePathOnePoint"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRelativePathRelativeMove"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateRelativePathXandYArrayLengthDifferent"/>
+  <testcase time="0.001" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateSquarePath"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateSquarePathSide0"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateSquarePathSideNegative"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateStarPlotPaths"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateStarPlotPathsRadiusesLengthLessThan3"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testCreateStarPlotPathsRadiusesNull"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testFlipDoubleDoublePaths"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testFlipDoubleDoublePathsSlope0"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testFlipDoublePaths"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testFlipDoublePathsEmptyPaths"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testRenderRaysFromOrigin2Test"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testRenderRaysFromOriginArraysLengthDifferentTest"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testRenderRaysFromOriginTest"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testRenderRaysFromOriginXArrayNullTest"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testRenderRaysFromOriginYArrayNullTest"/>
+  <testcase time="0.001" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testRotate"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testRotate0Or360Degree"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testRotateNoPaths"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testRotateTwoPaths"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testScaleDoubleDoublePathsArray"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testScaleDoubleDoublePathsArrayNonZeroZero"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testScaleDoubleDoublePathsArrayZeroNonZero"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testScaleDoublePathsArray"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testScaleDoublePathsArrayFactor0"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testScaleDoublePathsArrayNoPaths"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testTranslate0Delta"/>
+  <testcase time="0.001" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testTranslateNoPaths"/>
+  <testcase time="0" classname="org.javaq.chartfaces.render.svg.PathsUtilTest" name="testTranslateTwoPaths"/>
+</testsuite>

@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+	<body>
+		<ui:composition template="/WEB-INF/layout/layout.xhtml">
+		    <ui:define name="tabContainer">
+				<div id="top-nav">
+					<ol id="tabs">
+						<li><a class="active" href="${request.contextPath}/scatter.jsf" target="frameContent"><span>Usage</span></a></li>
+						<li><a href="${request.contextPath}/scatter.xhtml" target="frameContent"><span>JSF Source</span></a></li>
+						<li><a href="${request.contextPath}/source_viewer.jsf?sources=WeightHeight" target="frameContent"><span>Java Source</span></a></li>
+						<li><a href="${request.contextPath}/doc/taglib/cf/scatter.html" target="frameContent"><span>Tag Information</span></a></li>
+					</ol>
+				</div>
+		    	<iframe class="contentFrame" name="frameContent" id="frameContent" src="${request.contextPath}/scatter.jsf"/>
+		    </ui:define>
+		</ui:composition>
+	</body>
+</html>
